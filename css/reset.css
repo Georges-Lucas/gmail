@@ -1,0 +1,19 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font: 1.6rem "Montserrat",sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    letter-spacing: .1rem;
+    min-height: 100svh;
+}
+
+header{
+    text-align: right;
+}
