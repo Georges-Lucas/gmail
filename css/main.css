@@ -9,7 +9,6 @@ header {
     width: 100%; /* Prendre toute la largeur de l'écran */
     max-width: 100%; /* Assurer que la largeur ne dépasse pas 100% */
     background-color: rgba(255, 255, 255, 0.8); 
-    padding: 1rem 2rem;
     box-sizing: border-box;
 }
 
@@ -23,12 +22,13 @@ header nav img{
 }
 
 a:nth-child(4){
+    width: 100%;
     background-color: red;
 }
 
 
 /*main*/
-main{
+.accueille{
         background-image: url(../asset/email_fond.jpg);
         background-size: cover; 
         background-position: center 20%; 
@@ -37,4 +37,3 @@ main{
         height: calc(100vh - 80px);
         margin: 0; 
 }
-

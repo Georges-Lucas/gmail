@@ -20,3 +20,7 @@ header{
     padding: 0;
 }
 
+a, h1, h2, p, img{
+    margin : 0;
+    padding: 0;
+}
