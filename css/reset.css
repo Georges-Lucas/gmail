@@ -4,7 +4,7 @@ html {
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font: 1.6rem "Montserrat",sans-serif;
+    font: 1.6rem "Montserrat",sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -16,4 +16,7 @@ body {
 
 header{
     text-align: right;
+    margin: 0;
+    padding: 0;
 }
+

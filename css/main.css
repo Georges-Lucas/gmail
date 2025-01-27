@@ -1,9 +1,40 @@
 @import url(./reset.css);
 
+/*header*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Prendre toute la largeur de l'écran */
+    max-width: 100%; /* Assurer que la largeur ne dépasse pas 100% */
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
 nav{
-    border: 0.1rem solid black;
+    display: inline-block;
+}
+
+header nav img{
+    align-items: center;
+    max-width: 2rem;
 }
 
 a:nth-child(4){
     background-color: red;
 }
+
+
+/*main*/
+main{
+        background-image: url(../asset/email_fond.jpg);
+        background-size: cover; 
+        background-position: center 20%; 
+        background-repeat: no-repeat; 
+        padding-top: 80px; 
+        height: calc(100vh - 80px);
+        margin: 0; 
+}
+
