@@ -35,7 +35,7 @@ a:nth-child(4){
 }
 
 
-/*main*/
+/*premier partie de la page*/
 .accueille{
         background-image: url(../asset/email_fond.jpg);
         background-size: cover; 
@@ -55,12 +55,14 @@ a:nth-child(4){
     font-size: 3rem;
 }
 
+/* la deusième partie de la page */
+
 .inscription{
     background-color: var(--background-color);
     height: 100vh;
     }
 
-.inscription h1{    
+.inscription figcaption > h1{    
     padding-top: 5rem;
 }
 
@@ -70,8 +72,22 @@ a:nth-child(4){
     margin-right: auto;
 }
 
+.inscription form{
+    border: solid black .2rem;
+    padding: .5rem;
+}
+
 label, input{
+
     display: block;
     width: 100%;
 }
 
+form button{
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* dernière partie de la page*/
