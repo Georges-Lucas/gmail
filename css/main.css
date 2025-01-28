@@ -3,6 +3,7 @@
 :root{
     --text-color : rgb(0, 0, 0);
     --background-color : rgb(255, 255, 255);
+    --background-color-oppacite : rgba(255, 255, 255,.5);
     --bouton--background--color-red : rgb(255, 0, 0);
 }
 
@@ -15,7 +16,7 @@ header {
     left: 0;
     width: 100%; /* Prendre toute la largeur de l'écran */
     max-width: 100%; /* Assurer que la largeur ne dépasse pas 100% */
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: var(--background-color); 
     box-sizing: border-box;
 }
 
@@ -30,7 +31,7 @@ header nav img{
 
 a:nth-child(4){
     width: 100%;
-    background-color: red;
+    background-color: var(--bouton--background--color-red);
 }
 
 
@@ -47,7 +48,7 @@ a:nth-child(4){
 }
 
 .accueille h1{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--background-color-oppacite);
     margin-left: 10rem;
     max-width: 50rem;
     max-height: 15rem;
@@ -55,6 +56,22 @@ a:nth-child(4){
 }
 
 .inscription{
-    background-color: black;
+    background-color: var(--background-color);
     height: 100vh;
+    }
+
+.inscription h1{    
+    padding-top: 5rem;
 }
+
+.inscription figcaption{
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label, input{
+    display: block;
+    width: 100%;
+}
+
