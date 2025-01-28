@@ -20,7 +20,7 @@ header{
     padding: 0;
 }
 
-a, h1, h2, p, img{
+a, h1, h2, p, img, section{
     margin : 0;
     padding: 0;
 }
