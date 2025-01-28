@@ -1,6 +1,13 @@
 @import url(./reset.css);
 
+:root{
+    --text-color : rgb(0, 0, 0);
+    --background-color : rgb(255, 255, 255);
+    --bouton--background--color-red : rgb(255, 0, 0);
+}
+
 /*header*/
+
 
 header {
     position: fixed;
@@ -45,4 +52,9 @@ a:nth-child(4){
     max-width: 50rem;
     max-height: 15rem;
     font-size: 3rem;
+}
+
+.inscription{
+    background-color: black;
+    height: 100vh;
 }
