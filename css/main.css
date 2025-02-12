@@ -1,11 +1,6 @@
 @import url(./reset.css);
 
-:root{
-    --text-color : rgb(0, 0, 0);
-    --background-color : #fafafa;
-    --background-color-oppacite : rgba(255, 255, 255,.5);
-    --bouton--background--color-red : #dd5347;
-}
+
 
 /*header*/
 
