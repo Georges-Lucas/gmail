@@ -2,9 +2,9 @@
 
 :root{
     --text-color : rgb(0, 0, 0);
-    --background-color : rgb(255, 255, 255);
+    --background-color : #fafafa;
     --background-color-oppacite : rgba(255, 255, 255,.5);
-    --bouton--background--color-red : rgb(255, 0, 0);
+    --bouton--background--color-red : #dd5347;
 }
 
 /*header*/
