@@ -1,7 +1,5 @@
 @import url(./reset.css);
 
-
-
 /*header*/
 
 
@@ -86,3 +84,24 @@ form button{
 }
 
 /* dernière partie de la page*/
+
+.connection{
+    background-color: var(--background-color);
+    height: 100vh;
+
+    }
+
+.connection figcaption > h1{    
+    padding-top: 5rem;
+}
+
+.connection figcaption{
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.connection form{
+    border: solid black .2rem;
+    padding: .5rem;
+}
