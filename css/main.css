@@ -38,7 +38,6 @@ a:nth-child(4){
     font-size: 2rem;
     background-color: var(--bouton--background--color-red);
     color: var(--background-color);
-    position: fixed;
 }
 
 /*premier partie de la page*/
