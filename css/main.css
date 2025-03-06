@@ -1,8 +1,6 @@
 @import url(./reset.css);
 
 /*header*/
-
-
 header {
     position: fixed;
     top: 0;
@@ -27,6 +25,15 @@ a:nth-child(4){
     background-color: var(--bouton--background--color-red);
 }
 
+.scroll{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: 0;
+    font-size: 2rem;
+    background-color: var(--bouton--background--color-red);
+    color: var(--background-color);
+}
 
 /*premier partie de la page*/
 .accueille{
