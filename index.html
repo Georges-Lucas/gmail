@@ -18,7 +18,9 @@
     <main>
         <section class="accueille">
             <h1>Retrouvez la fluidité et la simplicité de Gmail <br>sur tous vos appareil</h1>
-            <button class="scroll" onclick="nextSection(1)">↓</button>
+            <div class="button-container">
+                <button class="scroll" onclick="nextSection(1)">↓</button>
+            </div>    
         </section>
         <section class="inscription">
             <figure>
@@ -44,8 +46,10 @@
                     </form>
                 </figcaption>
             </figure>
-            <button class="scroll" onclick="prevSection(0)">↑</button>
-            <button class="scroll" onclick="nextSection(2)">↓</button>
+            <div class="button-container">
+                <button class="scroll" onclick="prevSection(0)">↑</button>
+                <button class="scroll" onclick="nextSection(2)">↓</button>
+            </div>
         </section>
         <section class="connection">
             <figure>
@@ -63,7 +67,9 @@
                     </form>
                 </figcaption>
             </figure>
-            <button class="scroll" onclick="prevSection(1)">↑</button>
+            <div class="button-container">
+                <button class="scroll" onclick="prevSection(1)">↑</button>
+            </div>
         </section>
     </main>
     <footer></footer>
