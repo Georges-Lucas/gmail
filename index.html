@@ -18,7 +18,7 @@
     <main>
         <section class="accueille">
             <h1>Retrouvez la fluidité et la simplicité de Gmail <br>sur tous vos appareil</h1>
-            <button onclick="nextSection(1)">↓</button>
+            <button class="scroll" onclick="nextSection(1)">↓</button>
         </section>
         <section class="inscription">
             <figure>
@@ -26,32 +26,32 @@
                     <h1>Une boîte de réception entièrement repensée</h1>
                     <p>Avec les nouveaux onglets personnalisables, repérez immédiatement les nouveaux message et choississez ceux que vous souhaitez lire en priorité</p>
                     
-                    <form action="">
+                    <form action="get">
                         <h1>Créer un compte</h1>
-                        <label for="nom">Nom*
-                            <input type="text" name="nom" id="cree_nom" placeholder="Votre nom" required>
+                        <label for="cree_nom">Nom*
+                            <input type="text" name="cree_nom" id="cree_nom" placeholder="Votre nom" required>
                         </label>
-                        <label for="prenom">Prenom*
-                            <input type="text" name="prenom" id="cree_prenom" placeholder="Votre prenom" required>
+                        <label for="cree_prenom">Prenom*
+                            <input type="text" name="cree_prenom" id="cree_prenom" placeholder="Votre prenom" required>
                         </label>
-                        <label for="email">Mail*
-                            <input type="email" placeholder="Votre addresse mail" id="cree_email" required>
+                        <label for="cree_email">Mail*
+                            <input type="email" name="cree_email" id="cree_email" placeholder="Votre addresse mail"  required>
                         </label>
-                        <label for="mdp">Votre mot de passe*
-                            <input type="text" name="mdp" id="cree_mdp" placeholder="Mot de passe">
+                        <label for="cree_mdp">Votre mot de passe*
+                            <input type="text" name="cree_mdp" id="cree_mdp" placeholder="Mot de passe">
                         </label>
                         <button type="submit">Valider votre compte</button>
                     </form>
                 </figcaption>
             </figure>
-            <button onclick="prevSection(0)">↑</button>
-            <button onclick="nextSection(2)">↓</button>
+            <button class="scroll" onclick="prevSection(0)">↑</button>
+            <button class="scroll" onclick="nextSection(2)">↓</button>
         </section>
         <section class="connection">
             <figure>
                 <figcaption>
                     <h1>Bienvenue dans votre espace ...</h1>
-                    <form action="">
+                    <form action="get">
                         <h1>Connectez-vous à votre compte</h1>
                         <label for="co_email"> Mail ou login*
                             <input type="text" name="co_email" id="co_email">
@@ -63,10 +63,11 @@
                     </form>
                 </figcaption>
             </figure>
-            <button onclick="prevSection(1)">↑</button>
+            <button class="scroll" onclick="prevSection(1)">↑</button>
         </section>
     </main>
     <footer></footer>
+    <script type="module" src="./js/scrolling.js"></script>
 </body>
-    <script src="./js/scrolling.js"></script>
+   
 </html>
