@@ -2,7 +2,7 @@ let sections = document.querySelectorAll("section");
 let currentIndex = 0;
 
 function scrollToSection(index) {
-    sections[index].scrollIntoView({ behavior: "smooth" });
+    sections[index].scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 }
 
 document.addEventListener("wheel", (event) => {
@@ -17,3 +17,25 @@ document.addEventListener("wheel", (event) => {
     }
     scrollToSection(currentIndex);
 });
+
+document.querySelectorAll("nav a").forEach((link, index) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        currentIndex = index;
+        scrollToSection(currentIndex);
+    });
+});
+
+function nextSection(index) {
+    if (index < sections.length) {
+        currentIndex = index;
+        scrollToSection(currentIndex);
+    }
+}
+
+function prevSection(index) {
+    if (index >= 0) {
+        currentIndex = index;
+        scrollToSection(currentIndex);
+    }
+}
