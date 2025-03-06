@@ -12,6 +12,7 @@ body {
     color: #333;
     letter-spacing: .1rem;
     min-height: 100svh;
+    overflow: hidden;
 }
 
 header{
