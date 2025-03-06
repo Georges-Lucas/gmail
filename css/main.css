@@ -13,6 +13,8 @@ header {
 
 nav{
     display: inline-block;
+    width: 100%;
+    height: 3rem;
 }
 
 header nav img{
@@ -22,7 +24,10 @@ header nav img{
 
 a:nth-child(4){
     width: 100%;
+    height: 100%;
+    padding: .6rem;
     background-color: var(--bouton--background--color-red);
+    margin: 0;
 }
 
 .scroll{
@@ -33,6 +38,7 @@ a:nth-child(4){
     font-size: 2rem;
     background-color: var(--bouton--background--color-red);
     color: var(--background-color);
+    position: fixed;
 }
 
 /*premier partie de la page*/
