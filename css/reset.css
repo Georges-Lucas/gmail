@@ -21,7 +21,7 @@ header{
     padding: 0;
 }
 
-a, h1, h2, p, img, section{
+a, h1, h2, p, img, section, ul, li{
     margin : 0;
     padding: 0;
     text-decoration: none;
@@ -29,8 +29,6 @@ a, h1, h2, p, img, section{
 }
 
 :root{
-    --text-color : rgb(0, 0, 0);
     --background-color : #fafafa;
-    --background-color-oppacite : rgba(255, 255, 255, 0.5);
     --bouton--background--color-red : #dd5347;
 }

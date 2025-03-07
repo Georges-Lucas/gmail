@@ -11,29 +11,28 @@ header {
     box-sizing: border-box;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
+
+li{
+    display: inline-block;
 }
 
-nav img {
-    width: 3rem;
-    margin-right: .2rem;
+nav img{
+    display: inline-block;
+    width: 2rem;
 }
 
-a {
+nav p{
+    display: inline-block;
+}
+
+nav li{
     padding: 1rem;
 }
 
-a:nth-child(4){
+nav li:nth-child(4){
     background-color: var(--bouton--background--color-red);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
 
 /* BOUTONS DE NAVIGATION */
 .button-container {
@@ -68,22 +67,23 @@ a:nth-child(4){
 
 /*premier partie de la page*/
 .accueille{
-    background-image: url(../asset/email_fond.jpg);
+    background-image: url(../asset/image_fond.jpg);
     background-size: cover;
     background-position: center 20%;
     background-repeat: no-repeat;
     padding-top: 80px;
-        height: calc(100vh - 80px);
-        max-width: auto;
-        margin: 0; 
+    height: calc(100vh - 80px);
+    max-width: auto;
+    margin: 0; 
 }
 
 .accueille h1{
-    background-color: var(--background-color-oppacite);
     margin-left: 10rem;
     max-width: 50rem;
     max-height: 15rem;
     font-size: 3rem;
+    color: white;
+
 }
 
 /* la deusième partie de la page */
@@ -95,6 +95,16 @@ a:nth-child(4){
 
 .inscription figcaption > h1{    
     padding-top: 5rem;
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.inscription figcaption p{
+    width: 45rem;
+    text-align: center;
+    margin: 2rem auto 2rem auto;
 }
 
 .inscription figcaption{
@@ -106,12 +116,20 @@ a:nth-child(4){
 .inscription form{
     border: solid black .2rem;
     padding: .5rem;
+    width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 label, input{
-
     display: block;
     width: 100%;
+}
+
+input{
+    border: none;
+    padding: 1rem;
+    width: 50rem;
 }
 
 form button{
