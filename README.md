@@ -10,3 +10,4 @@ Le **projet gmail** est un projet qui porte sur la réalisation d'une page uniqu
 
 - **Front-End** : HTML, CSS, JavaScript, PHP
 
+[GitHub Pages](https://georges-lucas.github.io/gmail/)

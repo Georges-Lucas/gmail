@@ -68,11 +68,11 @@ a:nth-child(4){
 
 /*premier partie de la page*/
 .accueille{
-        background-image: url(../asset/email_fond.jpg);
-        background-size: cover; 
-        background-position: center 20%; 
-        background-repeat: no-repeat; 
-        padding-top: 80px; 
+    background-image: url(../asset/email_fond.jpg);
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    padding-top: 80px;
         height: calc(100vh - 80px);
         max-width: auto;
         margin: 0; 
