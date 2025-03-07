@@ -1,41 +1,33 @@
 let sections = document.querySelectorAll("section");
 let currentIndex = 0;
 
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
 function scrollToSection(index) {
-    sections[index].scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    if (index >= 0 && index < sections.length) {
+        sections[index].scrollIntoView({ behavior: "smooth" });
+        currentIndex = index;
+        updateButtons();
+    }
 }
 
-document.addEventListener("wheel", (event) => {
-    if (event.deltaY > 0) {
-        if (currentIndex < sections.length - 1) {
-            currentIndex++;
-        }
-    } else {
-        if (currentIndex > 0) {
-            currentIndex--;
-        }
+function updateButtons() {
+    prevBtn.style.display = currentIndex === 0 ? "none" : "flex";
+    nextBtn.style.display = currentIndex === sections.length - 1 ? "none" : "flex";
+}
+
+prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+        scrollToSection(currentIndex - 1);
     }
-    scrollToSection(currentIndex);
 });
 
-document.querySelectorAll("nav a").forEach((link, index) => {
-    link.addEventListener("click", (event) => {
-        event.preventDefault();
-        currentIndex = index;
-        scrollToSection(currentIndex);
-    });
+nextBtn.addEventListener("click", () => {
+    if (currentIndex < sections.length - 1) {
+        scrollToSection(currentIndex + 1);
+    }
 });
 
-function nextSection(index) {
-    if (index < sections.length) {
-        currentIndex = index;
-        scrollToSection(currentIndex);
-    }
-}
-
-function prevSection(index) {
-    if (index >= 0) {
-        currentIndex = index;
-        scrollToSection(currentIndex);
-    }
-}
+// Mise à jour initiale des boutons
+updateButtons();

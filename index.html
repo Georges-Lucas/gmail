@@ -9,46 +9,39 @@
 <body>
     <header>
         <nav>
-            <a href="">POUR LES PROS</a>
-            <a href="">CONNEXION</a>
-            <a href="">CRÉER UN COMPTE</a>
+            <img src="./asset/logo_gmail.png" alt="logo Gmail">
+            <a href="#">POUR LES PROS</a>
+            <a href="#">CONNEXION</a>
+            <a href="#">CRÉER UN COMPTE</a>
         </nav>
     </header>
     <main>
-        <section class="accueille">
-            <h1>Retrouvez la fluidité et la simplicité de Gmail <br>sur tous vos appareil</h1>
-            <div class="button-container">
-                <button class="scroll" onclick="nextSection(1)">↓</button>
-            </div>    
+        <section class="accueille active">
+            <h1>Retrouvez la fluidité et la simplicité de Gmail <br>sur tous vos appareils</h1>
         </section>
         <section class="inscription">
             <figure>
                 <figcaption>
                     <h1>Une boîte de réception entièrement repensée</h1>
-                    <p>Avec les nouveaux onglets personnalisables, repérez immédiatement les nouveaux message et choississez ceux que vous souhaitez lire en priorité</p>
-                    
+                    <p>Avec les nouveaux onglets personnalisables, repérez immédiatement les nouveaux messages et choisissez ceux que vous souhaitez lire en priorité.</p>
                     <form action="get">
                         <h1>Créer un compte</h1>
                         <label for="cree_nom">Nom*
                             <input type="text" name="cree_nom" id="cree_nom" placeholder="Votre nom" required>
                         </label>
-                        <label for="cree_prenom">Prenom*
-                            <input type="text" name="cree_prenom" id="cree_prenom" placeholder="Votre prenom" required>
+                        <label for="cree_prenom">Prénom*
+                            <input type="text" name="cree_prenom" id="cree_prenom" placeholder="Votre prénom" required>
                         </label>
                         <label for="cree_email">Mail*
-                            <input type="email" name="cree_email" id="cree_email" placeholder="Votre addresse mail"  required>
+                            <input type="email" name="cree_email" id="cree_email" placeholder="Votre adresse mail" required>
                         </label>
                         <label for="cree_mdp">Votre mot de passe*
-                            <input type="text" name="cree_mdp" id="cree_mdp" placeholder="Mot de passe">
+                            <input type="password" name="cree_mdp" id="cree_mdp" placeholder="Mot de passe">
                         </label>
                         <button type="submit">Valider votre compte</button>
                     </form>
                 </figcaption>
             </figure>
-            <div class="button-container">
-                <button class="scroll" onclick="prevSection(0)">↑</button>
-                <button class="scroll" onclick="nextSection(2)">↓</button>
-            </div>
         </section>
         <section class="connection">
             <figure>
@@ -56,23 +49,25 @@
                     <h1>Bienvenue dans votre espace ...</h1>
                     <form action="get">
                         <h1>Connectez-vous à votre compte</h1>
-                        <label for="co_email"> Mail ou login*
+                        <label for="co_email">Mail ou login*
                             <input type="text" name="co_email" id="co_email">
                         </label>
                         <label for="co_mdp">Mot de passe
-                            <input type="text" name="co_mdp" id="co_mdp">
+                            <input type="password" name="co_mdp" id="co_mdp">
                         </label>
                         <button type="submit">Connexion à votre compte</button>
                     </form>
                 </figcaption>
             </figure>
-            <div class="button-container">
-                <button class="scroll" onclick="prevSection(1)">↑</button>
-            </div>
         </section>
+
+        <!-- Boutons de navigation -->
+        <div class="button-container">
+            <button class="scroll" id="prevBtn">↑</button>
+            <button class="scroll" id="nextBtn">↓</button>
+        </div>
     </main>
     <footer></footer>
     <script src="./js/scrolling.js"></script>
 </body>
-   
 </html>
