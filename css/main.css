@@ -65,6 +65,14 @@ nav li:nth-child(4){
     transform: scale(1.1);
 }
 
+/*bouton de formulaire*/
+
+.btn-primary{
+    background-color: #1a73e8;
+    padding: 1rem;
+    color: white;
+    width: 20rem;
+}
 /*premier partie de la page*/
 .accueille{
     background-image: url(../asset/image_fond.jpg);
@@ -83,13 +91,11 @@ nav li:nth-child(4){
     max-height: 15rem;
     font-size: 3rem;
     color: white;
-
 }
 
 /* la deusième partie de la page */
 
 .inscription{
-    background-color: var(--background-color);
     height: 100vh;
     }
 
@@ -114,7 +120,8 @@ nav li:nth-child(4){
 }
 
 .inscription form{
-    border: solid black .2rem;
+    border: solid grey .3rem;
+    border-radius: .5rem;
     padding: .5rem;
     width: 60rem;
     margin-left: auto;
@@ -129,7 +136,9 @@ label, input{
 input{
     border: none;
     padding: 1rem;
-    width: 50rem;
+    width:56rem;
+    border-bottom: solid #9c9b9b .2rem;
+    background-color:var(--background-color);
 }
 
 form button{

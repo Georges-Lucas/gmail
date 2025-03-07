@@ -21,11 +21,16 @@ header{
     padding: 0;
 }
 
-a, h1, h2, p, img, section, ul, li{
+a, h1, h2, p, img, section, ul, li, button{
     margin : 0;
     padding: 0;
     text-decoration: none;
     color: black;
+    border: none;
+}
+
+h1, h2{
+    font-weight: 600;
 }
 
 :root{
