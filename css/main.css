@@ -17,15 +17,8 @@ nav{
     height: 3rem;
 }
 
-header nav img{
-    align-items: center;
-    max-width: 2rem;
-}
-
 a:nth-child(4){
-    width: 100%;
-    height: 100%;
-    padding: .6rem;
+    display: inline-block;
     background-color: var(--bouton--background--color-red);
     margin: 0;
 }
